@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_layout_c1"
+        android:title="@string/itemlayout_cuadrante1"/>
+    <item
+        android:id="@+id/item_layout_c2"
+        android:title="@string/itemlayout_cuadrante2"/>
+    <item
+        android:id="@+id/item_layout_c3"
+        android:title="@string/itemlayout_cuadrante3"/>
+    <item
+        android:id="@+id/item_layout_c4"
+        android:title="@string/itemlayout_cuadrante4"/>
+
+</menu>

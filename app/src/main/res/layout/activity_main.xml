@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="@string/txt_tarea"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/punto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/txt_punto1"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/punto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/txt_punto2"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/punto1" />
+
+        <EditText
+            android:id="@+id/x1"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="@string/txt_x1"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/punto1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/y1"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="@string/txt_y1"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/x1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/x2"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="@string/txt_x2"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/punto2"
+            app:layout_constraintTop_toBottomOf="@+id/x1" />
+
+        <EditText
+            android:id="@+id/y2"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="@string/txt_y2"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/y1" />
+
+        <Button
+            android:id="@+id/btn_pendiente"
+            android:layout_width="384dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/txt_btnPendiente"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/x2" />
+
+        <Button
+            android:id="@+id/btn_ecuacion"
+            android:layout_width="390dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_btnEcuacion"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_puntoMedio" />
+
+        <Button
+            android:id="@+id/btn_puntoMedio"
+            android:layout_width="390dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_btnPuntoMedio"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pendiente" />
+
+        <Button
+            android:id="@+id/btn_cuadrantes"
+            android:layout_width="390dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_btnCuadrantes"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ecuacion" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="377dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="16dp"
+            android:hint="Resultado"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_cuadrantes" />
+
+        <Button
+            android:id="@+id/popup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showPopupMenu"
+            android:text="Puntos"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_pendiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
